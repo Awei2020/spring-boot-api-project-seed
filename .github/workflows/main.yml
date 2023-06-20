@@ -20,7 +20,7 @@ jobs:
           python3 format.py
       - name: Check if file exists
         run: |
-          if [ -f "results.json" ]; then
+          if [ -f "results.sarif" ]; then
             echo "file_exists=true" >> $GITHUB_ENV
           else
             echo "file_exists=false" >> $GITHUB_ENV
